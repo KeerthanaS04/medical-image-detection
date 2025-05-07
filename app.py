@@ -6,7 +6,7 @@ import google.generativeai as genai
 from api_key import api_key
 
 # Configure genai with api key
-genai.configure(api_key=api_key)
+genai.configure(api_key=st.secrets["api_key"])
 
 # Setup the model
 generation_config = {
